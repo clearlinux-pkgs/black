@@ -6,7 +6,7 @@
 #
 Name     : black
 Version  : 20.8b1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/dc/7b/5a6bbe89de849f28d7c109f5ea87b65afa5124ad615f3419e71beb29dc96/black-20.8b1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dc/7b/5a6bbe89de849f28d7c109f5ea87b65afa5124ad615f3419e71beb29dc96/black-20.8b1.tar.gz
 Source1  : https://files.pythonhosted.org/packages/dc/7b/5a6bbe89de849f28d7c109f5ea87b65afa5124ad615f3419e71beb29dc96/black-20.8b1.tar.gz.asc
@@ -27,6 +27,7 @@ Requires: mypy_extensions
 Requires: pathspec
 Requires: regex
 Requires: toml
+Requires: typed_ast
 Requires: typing_extensions
 BuildRequires : aiohttp
 BuildRequires : aiohttp-cors
@@ -102,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1604943755
+export SOURCE_DATE_EPOCH=1604944647
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
