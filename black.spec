@@ -4,7 +4,7 @@
 #
 Name     : black
 Version  : 21.5b0
-Release  : 13
+Release  : 14
 URL      : https://files.pythonhosted.org/packages/52/7e/6a41d1504225ef9213731e69ecebfa8fe78c614bcb01e1147f6242073636/black-21.5b0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/52/7e/6a41d1504225ef9213731e69ecebfa8fe78c614bcb01e1147f6242073636/black-21.5b0.tar.gz
 Summary  : The uncompromising code formatter.
