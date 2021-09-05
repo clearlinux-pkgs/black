@@ -4,7 +4,7 @@
 #
 Name     : black
 Version  : 21.8b0
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/09/b0/045f72ac95cd8e2a0e457fb383022e032dc86c040f9b6eaba67968b001e3/black-21.8b0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/09/b0/045f72ac95cd8e2a0e457fb383022e032dc86c040f9b6eaba67968b001e3/black-21.8b0.tar.gz
 Summary  : The uncompromising code formatter.
@@ -46,6 +46,7 @@ BuildRequires : tox
 BuildRequires : typed_ast
 BuildRequires : typing_extensions
 BuildRequires : virtualenv
+Patch1: 0001-Bump-setuptools-setuptools_scm-min-versions.patch
 
 %description
 A subset of lib2to3 taken from Python 3.7.0b2.
@@ -99,13 +100,14 @@ python3 components for the black package.
 %prep
 %setup -q -n black-21.8b0
 cd %{_builddir}/black-21.8b0
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1630339505
+export SOURCE_DATE_EPOCH=1630885528
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
