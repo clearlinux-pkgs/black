@@ -1,6 +1,8 @@
 # This file contains recursive sources that require this package
 Pillow
+ansible
 hypothesis
 networkx
 pcs
 pyls-black
+resolvelib
