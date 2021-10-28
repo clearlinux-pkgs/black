@@ -5,4 +5,5 @@ hypothesis
 networkx
 pcs
 pyls-black
+python-lsp-black
 resolvelib

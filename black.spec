@@ -4,7 +4,7 @@
 #
 Name     : black
 Version  : 21.9b0
-Release  : 26
+Release  : 27
 URL      : https://files.pythonhosted.org/packages/b9/11/bde767284a6a15bf85b53ad696c3658eb3ead74e4697ecda2d07cec106ec/black-21.9b0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/11/bde767284a6a15bf85b53ad696c3658eb3ead74e4697ecda2d07cec106ec/black-21.9b0.tar.gz
 Summary  : The uncompromising code formatter.
@@ -105,7 +105,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1631731330
+export SOURCE_DATE_EPOCH=1635456929
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
