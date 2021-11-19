@@ -1,0 +1,12 @@
+21.11b1
+pypi(click)
+pypi(mypy_extensions)
+pypi(myst_parser)
+pypi(pathspec)
+pypi(platformdirs)
+pypi(regex)
+pypi(sphinx)
+pypi(sphinx_copybutton)
+pypi(sphinxcontrib_programoutput)
+pypi(tomli)
+pypi(typing_extensions)

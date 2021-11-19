@@ -1,5 +1,5 @@
 PKG_NAME := black
-URL = https://files.pythonhosted.org/packages/62/b6/82269f88c3e7855f058706a5b326b827699a3c88c96b37d9abfb81e2c62b/black-21.10b0.tar.gz
+URL = https://files.pythonhosted.org/packages/73/df/5a4c5af64a25212d494b31d7b62f8212424c0c8ffdac9462a7d15bc17b9f/black-21.11b1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
