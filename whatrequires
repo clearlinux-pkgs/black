@@ -2,11 +2,9 @@
 Pillow
 aesara
 ansible
-hypothesis
 networkx
 pcs
 pyls-black
-python-lsp-black
 qt6base
 resolvelib
 tzlocal
