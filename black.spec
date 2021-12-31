@@ -4,7 +4,7 @@
 #
 Name     : black
 Version  : 21.12b0
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/f7/60/7a9775dc1b81a572eb26836c7e77c92bf454ada00693af4b2d2f2614971a/black-21.12b0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f7/60/7a9775dc1b81a572eb26836c7e77c92bf454ada00693af4b2d2f2614971a/black-21.12b0.tar.gz
 Summary  : The uncompromising code formatter.
@@ -89,7 +89,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1638821051
+export SOURCE_DATE_EPOCH=1640990623
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -99,6 +99,7 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
+pypi-dep-fix.py . tomli
 python3 -m build --wheel --skip-dependency-check --no-isolation
 
 %install
@@ -109,6 +110,7 @@ cp %{_builddir}/black-21.12b0/LICENSE %{buildroot}/usr/share/package-licenses/bl
 cp %{_builddir}/black-21.12b0/docs/_static/license.svg %{buildroot}/usr/share/package-licenses/black/e71d25df55070a88d192a9ecf3a7ad755e44e8ee
 cp %{_builddir}/black-21.12b0/src/blib2to3/LICENSE %{buildroot}/usr/share/package-licenses/black/8482348f12824b36fba59883f9dd7fe03c1f86ca
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
+pypi-dep-fix.py %{buildroot} tomli
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
