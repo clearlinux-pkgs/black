@@ -4,7 +4,7 @@
 #
 Name     : black
 Version  : 21.12b0
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/f7/60/7a9775dc1b81a572eb26836c7e77c92bf454ada00693af4b2d2f2614971a/black-21.12b0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f7/60/7a9775dc1b81a572eb26836c7e77c92bf454ada00693af4b2d2f2614971a/black-21.12b0.tar.gz
 Summary  : The uncompromising code formatter.
@@ -31,6 +31,7 @@ BuildRequires : pytest
 BuildRequires : tox
 BuildRequires : typed_ast
 BuildRequires : virtualenv
+Patch1: 0001-drop-upper-version-reqs.patch
 
 %description
 A subset of lib2to3 taken from Python 3.7.0b2.
@@ -83,13 +84,14 @@ python3 components for the black package.
 %prep
 %setup -q -n black-21.12b0
 cd %{_builddir}/black-21.12b0
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640990623
+export SOURCE_DATE_EPOCH=1641228379
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
